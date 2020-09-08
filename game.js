@@ -60,10 +60,13 @@ function CheckSequence(){
     }
   }
   if(valid){
+    if(userClickedPattern.length==gamePattern.length){
+
     setTimeout(function(){
       nextSequence();
       userClickedPattern=[];
     },1000);
+  }
 
   }
   else{
